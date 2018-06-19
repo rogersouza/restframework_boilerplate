@@ -137,3 +137,13 @@ STATIC_URL = '/static/'
 
 #CORS CONFIGS
 CORS_ORIGIN_ALLOW_ALL = True
+
+#STATIC CONFIG
+STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
+STATIC_URL = '/static/'
+# STATICFILES_DIRS = (
+#     os.path.join(PROJECT_ROOT, 'static'),
+# )
+
+#WHITENOISE
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
